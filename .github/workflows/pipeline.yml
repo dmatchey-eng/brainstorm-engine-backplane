@@ -1,0 +1,30 @@
+name: Cognitive Drawing Board Engine CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  verify_engine:
+    runs-open-container: ubuntu-latest
+
+    steps:
+    - name: Checkout Local Repository Source Tracks
+      uses: actions/checkout@v4
+
+    - name: Initialize Node.js Environment Runtime
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+        cache: 'npm'
+
+    - name: Ingest Universal Dependency Manifest Libraries
+      run: npm ci
+
+    - name: Execute Strict TypeScript Compilation Sweep
+      run: npx tsc --noEmit
+
+    - name: Launch Automated Headless Core Pipeline Verification Test
+      run: npm test
