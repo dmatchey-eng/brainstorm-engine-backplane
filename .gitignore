@@ -1,39 +1,8 @@
-# =====================================================================
-# 1. NODE.JS DEPENDENCIES & RUNTIME CACHES
-# =====================================================================
+# .gitignore
 node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.npm/
-
-# =====================================================================
-# 2. TYPESCRIPT COMPILATION OUTPUTS
-# =====================================================================
-# Exclude the generated JavaScript distribution folder
 dist/
-*.tsbuildinfo
-
-# =====================================================================
-# 3. SANDBOXED SQLITE ENGINE DATA FILE CACHES
-# =====================================================================
-# Blocks tracking local data layers to preserve testing isolation
 *.db
-*.db-journal
 *.sqlite
-*.mosaic
-
-# =====================================================================
-# 4. SYSTEM LOGGER TEXT TRANSACTIONS
-# =====================================================================
-# Excludes the continuous scoreboards from your public repository
 *.log
 workspace_snapshots/
-
-# =====================================================================
-# 5. HARDWARE & OPERATING SYSTEM CONFIGURATION PLUGINS
-# =====================================================================
 .DS_Store
-Thumbs.db
-.idea/
-.vscode/
