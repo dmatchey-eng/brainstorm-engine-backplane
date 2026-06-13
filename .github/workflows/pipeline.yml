@@ -8,7 +8,7 @@ on:
 
 jobs:
   verify_engine:
-    runs-open-container: ubuntu-latest
+    runs-on: ubuntu-latest  # FIXED: Corrected property name from runs-open-container to runs-on
 
     steps:
     - name: Checkout Local Repository Source Tracks
