@@ -1,7 +1,6 @@
 {
   "name": "brainstorm-engine-backplane",
   "version": "1.0.0",
-  "description": "Multi-component cognitive drawing board infinite canvas engine",
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
