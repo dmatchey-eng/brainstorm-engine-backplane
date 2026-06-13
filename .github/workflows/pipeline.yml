@@ -21,7 +21,8 @@ jobs:
         cache: 'npm'
 
     - name: Ingest Universal Dependency Manifest Libraries
-      run: npm install  # FIXED: Changed from 'npm ci' to 'npm install' to auto-sync the mismatch
+      # FIXED: Added explicit API registry flag to bypass the 403 website lockout domain
+      run: npm install --registry=https://npmjs.org
 
     - name: Execute Strict TypeScript Compilation Sweep
       run: npx tsc --noEmit
