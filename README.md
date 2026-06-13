@@ -18,26 +18,35 @@ The system orchestrates ten concurrent components designed to optimize informati
 
 ---
 
+### 🔁 Detailed Subsystem Inter-Process Handshakes:
+1.  **Inbound Stream Ingestion**: The **Acoustic Phoneme Listener** and **Touch Panel Surface Handler** feed stream data directly into the central router. If you voice a logical contradiction (e.g., */nɑt/*), the pre-emptive interruption valve fires.
+2.  **Mic Rotation & Buffer Splitting**: The main display text area instantly locks down. The Row 9 Telemetry Banner rotates its visual state from upright listening (`█ 🔊 LSTN █`) to a horizontal background angle (`█ 🎤🗪 BKG █`). Your continuing speech is shunted to a background queue (`muffled_phoneme_queue`) rather than dropped.
+3.  **Dual-Track Cross-Examination**: While the **Hard Fact Engine (Condition A)** checks primary source anchors (NIST PML databases), the **Second Thought Mirror Engine (Condition B)** parses the background queue. It uses *Imaginative Determinism* to map speculative parameters (like hyperbaric fluid boundaries) to alternative physics tracks.
+4.  **Combinatorial Mesh Mapping**: The **Haruhi Superpermutation Engine** tracks context-switching volatility. Extreme hopping expands its calculation depth from $n=2$ to an $n=4$ symbol matrix. The resulting superstring (e.g., `"ODWPOWD"`) dictates absolute spatial coordinates on the whiteboard, automatically drawing vector connection threads between panels.
+5.  **Causal Blueprinting & Commentaries**: The **"What If" Engine** calculates abstract alternative questions that the active data can satisfy, while the **Divergent Commenter** injects lateral, cross-disciplinary metaphors. They output a scannable *Action-Consequence Matrix* detailing the immediate capability side-by-side with its downstream structural liabilities.
+6.  **Idempotent Sensory Gating**: Routine workspace clicks are completely muzzled. The sound buffer unlocks exclusively during landmark breakthroughs. It queries your SQLite database parameters to fire unique focus textures (like the `mechanical_pencil_set_down` thud at 110Hz/440Hz or the grainy `styrofoam_concrete_slurry` slide at 90Hz/180Hz) dead-center across the stereo channels.
+
+## 🤖 Aura: The Customizable Co-Working Persona
+
+**Aura (Component 5)** is not a static text-generation engine or an external assistant; she is a fully integrated, customizable co-working partner who uses first-person plural pronouns (**"we," "our," "us"**) to frame your design problems as a shared team sprint. 
+
+### 🎚️ Dynamic Parametric Matrix Overrides:
+You can directly pass customization shortcuts to Aura via the **Row 9 User Input Banner** to alter her behavior, tempo, and analytical delivery models:
+
+*   **Vocal Delivery Tempo (`Aura, speed 160` / `Aura, speed 200`)**: Sets her baseline speech execution tempo. Her standard conversational voice runs at **160 WPM**. When a data contradiction trips the system, she modulates her pitch profile flat to eliminate tension and accelerates to a **200 WPM Fast-Calm tone** to guide you through the layout reflow.
+*   **Answering Mode Directives (`Just the Facts` / `Make It Up`)**: Manual administrative macro overrides that force her backend logic to process queries through a specific target paradigm. `Just the Facts` executes an exhaustive sweep across all factual endpoints to output an unadorned summary card. `Make It Up` triggers an all-endpoint speculative run to compile an extensive prompt matrix.
+*   **Thematic Persona Resets (`Aura, reset`)**: Typing or speaking a reset command flushes out active conversational metrics, resets the parametric matrix back to 160 WPM, and strips variable weights inside the *Adaptive Habituation Audio Canvas*, wiping the drawing board clean without removing your permanent milestone NFTs.
+
+---
+
 ## 💼 End-User Business Applications
 
 This engine adapts dynamically to multiple industrial design and collaborative brainstorming tracks:
-
-### ⚙️ 1. Advanced Aerospace & Automotive Telemetry Mocking
-*   **The Use Case**: Simulating high-pressure component volatility profiles (e.g., brake valve microbursts or black-ice torque corrections).
-*   **How It Benefits**: The *Action-Consequence Engine* pairs engineering capabilities side-by-side with localized system failures. Teams can visualize how extreme physical stresses cascade across vehicle components, resolving logic blind spots before physical hardware prototyping begins.
-
-### 🌐 2. Cross-Disciplinary Civil Engineering & Geology Mapping
-*   **The Use Case**: Brainstorming architectural load distributions over volatile foundation structures.
-*   **How It Benefits**: The *What If Reverse Engine* and *Divergent Commenter* map structural metrics to cross-disciplinary anomalies (e.g., equating building stress to seismic fault-line shear velocities). This prompts civil engineers to find unexpected structural faults using geological data.
-
-### 📊 3. High-Velocity Network Data & Logistics Flow Routing
-*   **The Use Case**: Visualizing and optimizing data packet traffic, delivery pipelines, or commuter gridlocks.
-*   **How It Benefits**: The *Haruhi Superpermutation Sequencer* treats data bottlenecks as structural fluid nodes. It auto-packs and flows connection threads across your canvas coordinates, helping operations managers isolate bottlenecks and layout efficient distribution grids.
-
-### 🔐 4. Cryptographic Session Audit Trails & Knowledge Management
-*   **The Use Case**: Creating permanent, shareable, and replayable archives of executive technical decisions.
-*   **How It Benefits**: Sessions are compressed into lightweight `.mosaic` files containing *Immutable Landmark Flags* and *Response Asset NFTs*. Teammates can import these packages, inherit full time-travel playback clearance, and trace how a design evolved from a blank slate to a breakthrough.
-
+*   **Advanced Aerospace & Automotive Telemetry**: Testing high-pressure component volatility profiles (e.g., ABS valve microbursts). The Causal Matrix pairs immediate capabilities side-by-side with localized failures so engineers can resolve logic blind spots before hardware construction.
+*   **Cross-Disciplinary Civil Engineering**: Modeling structural load distributions over volatile foundations. The *What If Engine* maps structural data to geological metrics (e.g., equating building stress to seismic fault-line shear velocities), prompting lateral breakthroughs.
+*   **High-Velocity Logistics & Data Routing**: Optimizing throughput pipelines or commuter gridlocks. The *Haruhi Sequencer* treats data bottlenecks as structural fluid nodes, auto-packing and drawing connection threads across coordinates to optimize network flow layout grids.
+*   **Cryptographic Session Audit Trails & Knowledge Management**: Creating permanent, shareable, and replayable archives of executive technical decisions. Sessions are compressed into lightweight `.mosaic` files containing *Immutable Landmark Flags* and *Response Asset NFTs*. Teammates can import these packages, inherit full time-travel playback clearance, and trace how a design evolved from a blank slate to a breakthrough.
+  
 ---
 
 ## ⚙️ Installation & CI/CD Verification
@@ -52,8 +61,8 @@ Ensure you have Node.js 20.x or higher installed on your local computer director
 git clone https://github.com
 cd brainstorm_engine
 
-# Install synchronized library manifests byte-for-byte
-npm ci
+# Install synchronized dependency manifests
+npm install
 
 # Compile type-safe TypeScript files
 npm run build
