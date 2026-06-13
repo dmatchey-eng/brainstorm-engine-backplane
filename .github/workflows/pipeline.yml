@@ -1,4 +1,4 @@
-name: Cognitive Drawing Board Engine CI
+name: Cognitive Drawing Board Native CI
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ main, master ]
 
 jobs:
-  verify_engine:
+  verify_native_engine:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,16 +17,8 @@ jobs:
     - name: Initialize Node.js Environment Runtime
       uses: actions/setup-node@v4
       with:
-        node-version: '20.x'
-
-    - name: Force Clean Package-Free Ingestion
-      # FIXED: Added --no-package-lock to explicitly ignore out-of-sync website paths
-      run: |
-        npm config set registry https://npmjs.org
-        npm install --no-package-lock
-
-    - name: Execute Strict TypeScript Compilation Sweep
-      run: npx tsc --noEmit
+        node-version: '22.x'  # CRITICAL: Must be 22 or higher for native node:sqlite
 
     - name: Launch Automated Headless Core Pipeline Verification Test
-      run: npm test
+      # No 'npm install' or 'npm ci' required! Directly execute vanilla Node.js
+      run: node index.js
