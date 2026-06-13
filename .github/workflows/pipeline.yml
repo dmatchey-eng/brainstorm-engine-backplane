@@ -18,11 +18,12 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '20.x'
-        cache: 'npm'
 
-    - name: Ingest Universal Dependency Manifest Libraries
-      # FIXED: Added explicit API registry flag to bypass the 403 website lockout domain
-      run: npm install --registry=https://npmjs.org
+    - name: Force Inbound API Registry Routing
+      # FIXED: Rewrites the npm configuration before running install to bypass 403 blocks
+      run: |
+        npm config set registry https://npmjs.org
+        npm install
 
     - name: Execute Strict TypeScript Compilation Sweep
       run: npx tsc --noEmit
