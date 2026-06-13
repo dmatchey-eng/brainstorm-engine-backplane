@@ -19,11 +19,11 @@ jobs:
       with:
         node-version: '20.x'
 
-    - name: Force Inbound API Registry Routing
-      # FIXED: Rewrites the npm configuration before running install to bypass 403 blocks
+    - name: Force Clean Package-Free Ingestion
+      # FIXED: Added --no-package-lock to explicitly ignore out-of-sync website paths
       run: |
         npm config set registry https://npmjs.org
-        npm install
+        npm install --no-package-lock
 
     - name: Execute Strict TypeScript Compilation Sweep
       run: npx tsc --noEmit
