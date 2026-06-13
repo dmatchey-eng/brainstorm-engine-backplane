@@ -1,0 +1,19 @@
+{
+  "name": "brainstorm-engine-backplane",
+  "version": "1.0.0",
+  "description": "Multi-component cognitive drawing board infinite canvas engine",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "node dist/index.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  }
+}
